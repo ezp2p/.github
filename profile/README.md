@@ -4,10 +4,10 @@
 
 # ezp2p
 
-**Chat with no servers in the middle.**
+**A truely decentralized internet**
 
-Your chats live on your own computer. Your friends' live on theirs.<br>
-Nothing sits between you that can read them.
+The internet was always meant to be peer-to-peer, so we're create apps that let
+you stay connected without a man in the middle.
 
 [Website](https://www.ezp2p.org) · [Wiki](https://www.ezp2p.org/wiki/) · [Puddle Protocol](https://github.com/ezp2p/protocol)
 
@@ -15,24 +15,38 @@ Nothing sits between you that can read them.
 
 ---
 
-### What we're building
+### Planned Projects
 
-| Project | What it is | Status |
-|---|---|---|
-| 💧 **[Puddle](https://github.com/ezp2p/puddle)** | Your own chat, on your own computer. A desktop app, or `puddled` headless in Docker; your phone connects back to it. | Usable: chats, groups, files, calls, phone pairing |
-| 🌊 **[Pond](https://github.com/ezp2p/pond)** | A community server, with channels and many members. People join from their Puddle with an invite link. | Text channels |
-| 🧱 **[Levee](https://github.com/ezp2p/levee)** | A relay that gives a Puddle a steady public address and holds its messages while it's offline, without being able to read them. | Design draft |
-| 📜 **[Protocol](https://github.com/ezp2p/protocol)** | What every ezp2p program says on the wire, written down once, with test vectors. | First cut |
+| Project | What it is                                                         |
+|-|-|
+| Puddle  | A peer-to-peer messaging, video calling and voice calling platform |
+| Pond    | Community servers comparable to platforms such as Guilded and Discord |
+| Levee   | A relay for Puddle that runs on a VPS so you don't need a static IP at home |
+| Drip    | A social media feed that combines YouTube and Twitter              |
 
 ### How it works
 
-- **You host yourself.** A Puddle runs on your machine and talks directly to your friends' Puddles.
-- **Keys prove who's who.** Your identity is a key chain from a recovery phrase. Every request is signed, and every
-  answer is signed back.
-- **Nothing is public.** A request that fails any check gets the same `404` as a path that doesn't exist, so a stranger
-  can't even tell a Puddle is there.
-- **One protocol, many programs.** Each program is built in its own code and upgraded at its own pace, and they still
-  understand each other.
+- **No Signup Requires** just run Puddle and you're in.
+- **Friendships via Handshakes** your Puddle will shake hands with your friends Puddle to form a connection.
+- **Encrypted End to End** all conversations are encrypted with keypairs, then transmitted via TLS.
+
+### For Users
+
+You can run Puddle on your laptop, desktop, home server; whatever.
+
+You can chat directly Puddle to Puddle provided you do the required port forwarding. If you don't want to do that, then you can hide behind a Levee on a cheap VPS.
+
+### For Admins
+
+You can easily provide Levees for Puddle users, paid or free. They're designed to
+use minimal compute and minimal storage.
+
+You can host a Pond and have full visbility over it's usage, so that you can 
+actually protect yourself from illegal activities (unlike a certain other chat 
+app).
+
+All of our binaries are written to be as resource efficient as possible, and we 
+actively encourage pull requests if you have an issue.
 
 ### Get started
 

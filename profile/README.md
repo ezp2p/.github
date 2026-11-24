@@ -17,7 +17,7 @@ Nothing sits between you that can read them.
 
 ### What we're building
 
-| | | Status |
+| Project | What it is | Status |
 |---|---|---|
 | 💧 **[Puddle](https://github.com/ezp2p/puddle)** | Your own chat, on your own computer. A desktop app, or `puddled` headless in Docker; your phone connects back to it. | Usable: chats, groups, files, calls, phone pairing |
 | 🌊 **[Pond](https://github.com/ezp2p/pond)** | A community server, with channels and many members. People join from their Puddle with an invite link. | Text channels |
